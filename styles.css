@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+body {
+  background: #0a0c1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b4b2d8;
+  text-align: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #1c1938;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  margin: 5rem 3rem;
+}
+h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-top: 0;
+  text-align: center;
+  line-height: 1.15;
+}
+.img {
+  width: 100%;
+  background: #a85bdb;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.img img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+}
+.special {
+  color: #a85bdb;
+}
+
+.content {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.foot {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #fff;
+  padding-top: 3rem;
+  display: inline-block;
+}
+.footer p {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 0.5rem;
+}
+@media screen and (min-width: 576px) {
+  .card {
+    flex-direction: row-reverse;
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .img img {
+    min-width: 580px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    object-position: 50% 50%;
+  }
+  .img {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+  h1 {
+    font-size: 2.8rem;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  .content {
+    padding: 5rem;
+  }
+  .text {
+    text-align: left;
+    padding-right: 4rem;
+  }
+  .footer {
+    text-align: left;
+  }
+  .footer ul {
+    flex-direction: row;
+    margin-top: 2rem;
+
+    margin-bottom: 0;
+    text-align: left;
+  }
+  li {
+    padding-right: 2rem;
+  }
+  .foot {
+    font-size: 2rem;
+  }
+}
